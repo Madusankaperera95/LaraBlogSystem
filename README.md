@@ -12,7 +12,7 @@ This is a Blog System  thst registered users can add posts,update posts and dele
 
 #### 1. Download
 
-      git clone https://github.com/Madusankaperera95/CynMailBackEnd.git
+      git clone  https://github.com/Madusankaperera95/LaraBlogSystem.git
 
 #### 2. Environment Files
 This package ships with a .env.example file in the root of the project.
