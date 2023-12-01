@@ -62,10 +62,10 @@ class BlogPostController extends Controller
      */
     public function edit(BlogPost $blogpost)
     {
-//        if($blogpost->user_id != auth()->user()->id)
-//        {
-//            return redirect('/unauthorized');
-//        }
+        if($blogpost->user_id != auth()->user()->id)
+        {
+            return redirect('/unauthorized');
+        }
         return view('BlogPosts.Edit')->with('blogPost',$blogpost);
     }
 
