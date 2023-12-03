@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\BlogPostRequest;
+use App\Jobs\SendWelcomeEmailJob;
 use App\Models\BlogPost;
 use App\Servicses\BlogService;
 use Illuminate\Http\Request;
@@ -43,7 +44,7 @@ class BlogPostController extends Controller
     public function store(BlogPostRequest $request)
     {
         $blogPost = $this->blogService->addBlogPost($request->all(),$request->user());
-
+       dispatch(new SendWelcomeEmailJob());
         return redirect('dashboard')->with('message','Blog Post Created Successfully');
         //
     }
