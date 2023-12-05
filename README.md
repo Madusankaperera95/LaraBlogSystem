@@ -1,6 +1,5 @@
 ##  Blog System
 
-
 This is a Blog System  thst registered users can add posts,update posts and delete own posts.Also Recently addd Blog Posts Can be Viewd
 
 ## Requirements
