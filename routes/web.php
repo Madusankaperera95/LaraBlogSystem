@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return redirect()->to('blogposts');
+    return view('welcome');
 })->name('home');
 
 
